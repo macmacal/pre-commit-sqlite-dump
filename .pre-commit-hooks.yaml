@@ -1,0 +1,10 @@
+---
+# For use with pre-commit.
+# See usage instructions at http://pre-commit.com
+
+- id: sqlite-dump
+  name: sqlite dump
+  description: simply dumps sqlite db into text.
+  entry: sqlite_dump.sh
+  language: script
+  always_run: true
