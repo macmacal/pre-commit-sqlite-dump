@@ -11,3 +11,13 @@ repos:
     rev: v2.2.6
     hooks:
     - id: codespell
+
+  - repo: local
+    hooks:
+      - id: sqlite-dump
+        name: (TEST) sqlite dump
+        description: simply dumps sqlite db into text.
+        entry: sqlite_dump.sh
+        language: script
+        always_run: true
+        args: [db, sdb, sqlite, db3, s3db, sqlite3, sl3, db2, s2db, sqlite2, sl2]
