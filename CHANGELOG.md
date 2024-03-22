@@ -14,6 +14,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## 2.0.0
+
+### Added
+
+- Support for multiple database files in the project directory.
+
+### Changed
+
+- Changed `args` type from explicit paths for database & dump to a list of database extensions.
+
 ## 1.0.0
 
 ### Added
